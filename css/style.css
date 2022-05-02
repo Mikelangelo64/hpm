@@ -172,6 +172,35 @@ input[type=number] {
   color: #4C5159;
   font-size: 12px;
 }
+@media screen and (max-width: 584px) {
+  .input-custom {
+    font-size: 14px;
+    border-bottom: 1px solid #C4C4C4;
+  }
+  .input-custom:focus {
+    border-bottom: 1px solid #197D4D;
+  }
+  .input-custom::-webkit-input-placeholder {
+    color: #4C5159;
+    font-size: 14px;
+  }
+  .input-custom::-moz-placeholder {
+    color: #4C5159;
+    font-size: 14px;
+  }
+  .input-custom:-ms-input-placeholder {
+    color: #4C5159;
+    font-size: 14px;
+  }
+  .input-custom::-ms-input-placeholder {
+    color: #4C5159;
+    font-size: 14px;
+  }
+  .input-custom::placeholder {
+    color: #4C5159;
+    font-size: 14px;
+  }
+}
 
 h2.title span {
   color: #A72C24;
@@ -253,7 +282,7 @@ h1.title span {
   }
 }
 
-.custom-logo-link img {
+.custom-logo-link svg {
   /* width: 180px;
   height: auto; */
   width: auto;
@@ -717,8 +746,12 @@ h1.title span {
 }
 @media screen and (max-width: 867px) {
   .about-us__slider {
-    width: 70%;
-    border-radius: 5px;
+    width: 94%;
+  }
+}
+@media screen and (max-width: 780px) {
+  .about-us__slider {
+    padding-bottom: 50px;
   }
 }
 .about-us__slider .owl-carousel {
@@ -745,6 +778,8 @@ h1.title span {
   width: 100%;
   padding-bottom: 577px;
   position: relative;
+  border-radius: 5px;
+  overflow: hidden;
 }
 @media screen and (max-width: 592px) {
   .about-us__slider .owl-carousel .slider__img {
@@ -806,9 +841,31 @@ h1.title span {
     left: -57%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 780px) {
   .about-us__slider .owl-carousel .owl-nav {
-    display: none;
+    width: 100%;
+    left: -100%;
+    bottom: -10%;
+  }
+}
+@media screen and (max-width: 780px) {
+  .about-us__slider .owl-carousel .owl-nav {
+    bottom: -15%;
+  }
+}
+@media screen and (max-width: 479px) {
+  .about-us__slider .owl-carousel .owl-nav {
+    bottom: -18%;
+  }
+}
+@media screen and (max-width: 393px) {
+  .about-us__slider .owl-carousel .owl-nav {
+    bottom: -21%;
+  }
+}
+@media screen and (max-width: 345px) {
+  .about-us__slider .owl-carousel .owl-nav {
+    bottom: -25%;
   }
 }
 .about-us__slider .owl-carousel .owl-nav button.owl-prev, .about-us__slider .owl-carousel .owl-nav button.owl-next {
@@ -1051,20 +1108,22 @@ h1.title span {
   width: 23px;
   height: 19px;
   position: absolute;
-  top: 50%;
+  top: 35%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 .products__slider .owl-carousel .owl-nav button.owl-prev.disabled, .products__slider .owl-carousel .owl-nav button.owl-next.disabled {
   opacity: 0.3;
+}
+@media screen and (max-width: 1030px) {
+  .products__slider .owl-carousel .owl-nav button.owl-prev, .products__slider .owl-carousel .owl-nav button.owl-next {
+    top: 32%;
+  }
 }
 @media screen and (max-width: 867px) {
   .products__slider .owl-carousel .owl-nav button.owl-prev, .products__slider .owl-carousel .owl-nav button.owl-next {
     width: 30px;
     height: 30px;
-  }
-}
-@media screen and (max-width: 770px) {
-  .products__slider .owl-carousel .owl-nav button.owl-prev, .products__slider .owl-carousel .owl-nav button.owl-next {
-    display: none;
   }
 }
 .products__slider .owl-carousel .owl-nav button.owl-prev {
@@ -1575,18 +1634,28 @@ h1.title span {
 @media screen and (max-width: 1186px) {
   .form-request__input {
     margin: 0 15px 45px;
+    /* &:last-child, &:nth-child(3){
+        margin-bottom: 0;
+    } */
   }
-  .form-request__input:last-child, .form-request__input:nth-child(3) {
+}
+@media screen and (max-width: 1155px) {
+  .form-request__input:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 866px) {
+  .form-request__input:nth-child(3) {
     margin-bottom: 0;
   }
 }
 @media screen and (max-width: 584px) {
   .form-request__input {
-    margin: 0 15px 30px;
+    margin: 0 15px 40px;
     width: 90%;
   }
   .form-request__input:nth-child(3) {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   .form-request__input:last-child {
     margin-bottom: 0;
@@ -1694,15 +1763,14 @@ h1.title span {
   }
 }
 .footer__logo {
-  background: #F5F9FE;
-  border-radius: 5px;
-  padding: 5px 10px;
-  max-width: 110px;
+  padding: 5px 10px 5px 0;
+  max-width: 180px;
   margin-bottom: 17px;
 }
 @media screen and (max-width: 640px) {
   .footer__logo {
     margin: 0 auto 17px auto;
+    padding: 5px 0 5px 12px;
   }
 }
 @media screen and (max-width: 605px) {

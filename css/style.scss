@@ -199,6 +199,18 @@ input[type=number] {
         font-size: 12px;
     }
 
+    @media screen and (max-width: 584px) {
+        font-size: 14px;
+        border-bottom: 1px solid #C4C4C4;
+        &:focus{
+            border-bottom: 1px solid #197D4D;
+        }
+        &::placeholder{
+            color: $grey-dark;
+            font-size: 14px;
+        }
+    }
+
 }
 
 
@@ -284,7 +296,7 @@ h1.title{
 }
 .custom-logo-link {
     
-    img{
+    svg{
         /* width: 180px;
         height: auto; */
         width: auto;
@@ -721,8 +733,12 @@ h1.title{
         overflow: hidden;
         //width: 50%;
         @media screen and (max-width: 867px){
-            width: 70%;
-            border-radius: 5px;
+            //width: 70%;
+            width: 94%;
+            //border-radius: 5px;
+        }
+        @media screen and (max-width: 780px){
+            padding-bottom: 50px;
         }
 
         .owl-carousel {
@@ -745,6 +761,8 @@ h1.title{
                 padding-bottom: 577px;
                 //height: 100%;
                 position: relative;
+                border-radius: 5px;
+                overflow: hidden;
                 @media screen and (max-width: 592px) {
                     padding-bottom: 0;
                 }
@@ -793,9 +811,25 @@ h1.title{
                     left: -57%;
                     //margin-bottom: 20px;
                 }
-                @media screen and (max-width: 768px) {
-                    display: none;
+                @media screen and (max-width: 780px) {
+                    //display: none;
                     //margin-bottom: 10px;
+                    width: 100%;
+                    left: -100%;
+                    bottom: -10%;
+
+                }
+                @media screen and (max-width: 780px) {
+                    bottom: -15%;
+                }
+                @media screen and (max-width: 479px) {
+                    bottom: -18%;
+                }
+                @media screen and (max-width: 393px) {
+                    bottom: -21%;
+                }
+                @media screen and (max-width: 345px) {
+                    bottom: -25%;
                 }
         
                 button.owl-prev, button.owl-next{
@@ -1036,18 +1070,21 @@ h1.title{
                     width: 23px;
                     height: 19px;
                     position: absolute;
-                    top: 50%;
+                    top: 35%;
+                    transform: translate(0, -50%);
         
                     &.disabled{
                         opacity: 0.3;
                     }
-
+                    @media screen and (max-width: 1030px) {
+                        top: 32%;
+                    }
                     @media screen and (max-width: 867px) {
                         width: 30px;
                         height: 30px;
                     }
                     @media screen and (max-width: 770px) {
-                        display: none;
+                        //display: none;
                     }
                 }
         
@@ -1534,15 +1571,27 @@ h1.title{
         width: 230px;
         @media screen and (max-width: 1186px) {
             margin: 0 15px 45px;
-            &:last-child, &:nth-child(3){
+            /* &:last-child, &:nth-child(3){
+                margin-bottom: 0;
+            } */
+        }
+        @media screen and (max-width: 1155px) {
+            //margin: 0 15px 45px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        @media screen and (max-width: 866px) {
+            //margin: 0 15px 45px;
+            &:nth-child(3){
                 margin-bottom: 0;
             }
         }
         @media screen and (max-width: 584px) {
-            margin: 0 15px 30px;
+            margin: 0 15px 40px;
             width: 90%;
             &:nth-child(3){
-                margin-bottom: 30px;
+                margin-bottom: 40px;
             }
             &:last-child{
                 margin-bottom: 0;
@@ -1651,14 +1700,15 @@ h1.title{
     
     //.footer__logo {
     &__logo {
-        background: $white;
-        border-radius: 5px;
-        padding: 5px 10px;
-        max-width: 110px;
+        //background: $white;
+        //border-radius: 5px;
+        padding: 5px 10px 5px 0;
+        max-width: 180px;
         margin-bottom: 17px;
 
         @media screen and (max-width: 640px) {
             margin: 0 auto 17px auto;
+            padding: 5px 0 5px 12px;
         }
     }
     &__socials__container{
