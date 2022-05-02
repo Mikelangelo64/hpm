@@ -1447,7 +1447,7 @@ h1.title span {
   height: 10px;
 }
 .contact-info__socials {
-  max-width: 107px;
+  width: 107px;
 }
 
 .socials {
