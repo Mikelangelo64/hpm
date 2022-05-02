@@ -848,7 +848,7 @@ h1.title span {
     bottom: -10%;
   }
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 593px) {
   .about-us__slider .owl-carousel .owl-nav {
     bottom: -15%;
   }
