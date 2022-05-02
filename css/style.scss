@@ -369,7 +369,7 @@ h1.title{
         @media screen and (max-width: 528px){
             margin-bottom: 35px;
             padding-bottom: 30px;
-            border-bottom: 2px solid #A72C24;
+            //border-bottom: 2px solid #A72C24;
         }
     }
     
@@ -398,18 +398,6 @@ h1.title{
         }
         @media screen and (max-width: 528px){
             display: none;
-        }
-    }
-    //.header__btn__request__mobile {
-    &__btn__request__mobile {
-        display: none;
-        
-        @media screen and (max-width: 528px){
-            display: block;
-            padding: 9px 23px;
-            font-size: 20px;
-            height: 33px;
-
         }
     }
 }
