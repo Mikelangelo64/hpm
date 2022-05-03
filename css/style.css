@@ -129,7 +129,7 @@ input[type=number] {
   line-height: 130%;
 }
 ._btn:hover {
-  background: transparent;
+  background: #fff;
   color: #A72C24;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -357,8 +357,23 @@ h1.title span {
     padding-bottom: 30px;
   }
 }
+.header__phone__desktop {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.header__phone__desktop:hover {
+  color: #A72C24;
+}
+@media screen and (max-width: 1111px) {
+  .header__phone__desktop {
+    margin: 0 20px;
+    width: 276px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .header__phone__desktop {
+    margin: unset;
+    width: unset;
     position: relative;
     right: -66px;
   }

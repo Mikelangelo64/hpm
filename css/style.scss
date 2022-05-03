@@ -170,7 +170,7 @@ input[type=number] {
     //background-size: 300% 100%;
 
     &:hover{
-        background: transparent;
+        background: #fff;
         color: $red;
         transition: all .2s ease-in-out;
     }
@@ -375,8 +375,18 @@ h1.title{
     
     //.header__phone__desktop {
     &__phone__desktop {
+        transition: all 0.3s ease;
+        &:hover{
+            color: $red;
+        }
+        @media screen and (max-width: 1111px){
+            margin: 0 20px;
+            width: 276px;
+        }
         @media screen and (max-width: 1024px){
             //margin: 0px 53px 0 auto;
+            margin: unset;
+            width: unset;
             position: relative;
             right: -66px;
             
